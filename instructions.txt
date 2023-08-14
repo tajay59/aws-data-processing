@@ -1,5 +1,5 @@
 Before runing script :
-1. Ensure sqlite databse is inside the /database directory
+1. Ensure sqlite databse is inside the '/database' directory
 2. Virtual environment with all dependencies installed have been created. See SETUP below
 
 # Note
@@ -30,3 +30,4 @@ Before runing script :
 
 # EVERY OTHER RUN AFTER FIRST
 1. Complete steps 3 and 5 in SETUP outlined above. Not 4
+2. An Excel file with the results can be found in the '/output' directory after running the script
