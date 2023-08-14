@@ -1,0 +1,32 @@
+Before runing script :
+1. Ensure sqlite databse is inside the /database directory
+2. Virtual environment with all dependencies installed have been created. See SETUP below
+
+# Note
+1. For the following variables, all values in dataset outside of the following thresholds will be processed as missing data:
+    Temperature < 0 or Temperature > 40 ℃. Temperatures for this dataset has a 10 minute resolution
+    Windspeed > 40 KT . Windspeed for this dataset has a 10 minute resolution
+    Rainfall > 20mm/ 5 min period. Rainfall for this dataset has a 5 minute resolution
+
+
+
+# SETUP / FIRST RUN
+1. Clone repository
+2. Create a virtual environment(env) inside repository folder ("aws data processing"), using a terminal:
+    windows: python -m venv env
+    linux: python3 venv env
+
+3. Enter virtual environment:
+    windows: .\env\Scripts\activate
+    linux: source env/bin/activate
+
+4. Install the dependencies in the virtual env using Pip:
+    pip install -r requirements.txt
+
+5. Run Script: 
+    windows: py run.py
+    linux: python3 run.py
+
+
+# EVERY OTHER RUN AFTER FIRST
+1. Complete steps 3 and 5 in SETUP outlined above. Not 4
