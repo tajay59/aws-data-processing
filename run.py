@@ -32,6 +32,8 @@ if __name__ == '__main__':
 
         db.DownTime([AT,WSA,WDA,RAIN,RH])
 
+        print("\n COMPLETE!!!")
+
     else:
         print(f"Unable to connect to {dbName} \nExiting!!!")
         exit()
